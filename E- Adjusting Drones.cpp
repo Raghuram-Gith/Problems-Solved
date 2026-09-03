@@ -26,15 +26,20 @@ void solve() {
         ans = max(ans, curr - val);
     }
     
-    cout << ans << endl;
+    cout << ans << "\n";
 }
 
 int main() {
-    
+
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    solve();
+    int t;
+    if (cin >> t) { 
+        while (t--) {
+            solve();
+        }
+    }
     
     return 0;
 }
